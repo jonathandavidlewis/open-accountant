@@ -22,6 +22,15 @@
 
 - `python manage.py migrate`
 
+### Collect static files
+This will make default style, img, and js files available
+
+- `python manage.py collectstatic`
+
+### Create a user account
+
+- `python manage.py createsuperuser`
+
 ### Start the app
 
 - `python manage.py runserver`
