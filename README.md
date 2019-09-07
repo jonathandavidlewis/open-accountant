@@ -4,8 +4,9 @@
 
 
 ### Requirements
-
-- python3
+- Python 3.7+
+  - `sudo apt-get install python3.7`
+  - `sudo apt-get install python3-env` (required on debian systems)
 - virtualenv
   - `pip3 install virtualenv` OR `sudo pip install virtualenv`  
 
