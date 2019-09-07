@@ -7,13 +7,13 @@
 
 - python3
 - virtualenv
-  - pip3 install virtualenv
+  - `pip3 install virtualenv` OR `sudo pip install virtualenv`  
 
 ### Installation
 
 - clone the repository
 - cd into the project folder open_accountant
-- `virtualenv venv`
+- `python3 -m venv venv` uses python 3 for your local environment
 - `source enter.sh`
 - `pip3 install -r requirements.txt`
 
