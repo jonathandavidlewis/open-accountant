@@ -16,7 +16,7 @@
 - cd into the project folder open_accountant
 - `python3 -m venv venv` uses python 3 for your local environment
 - `source enter.sh`
-- `pip3 install -r requirements.txt`
+- `pip install -r requirements.txt`
 
 ### Run database migrations
 
