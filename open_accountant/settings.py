@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'open-accountant.urls'
+ROOT_URLCONF = 'open_accountant.urls'
 
 TEMPLATES = [
     {
@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'open-accountant.wsgi.application'
+WSGI_APPLICATION = 'open_accountant.wsgi.application'
 
 
 # Database
