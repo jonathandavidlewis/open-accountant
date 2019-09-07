@@ -24,7 +24,7 @@
 
 ### Start the app
 
-- `python3 manage.py runserver`
+- `python manage.py runserver`
 - visit [http://localhost:8000](http://localhost:8000)
 
 
