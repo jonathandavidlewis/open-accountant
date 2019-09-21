@@ -6,6 +6,7 @@ admin.site.register(Account)
 # admin.site.register(Transaction)
 admin.site.register(Credit)
 admin.site.register(Debit)
+admin.site.register(Category)
 
 
 class CreditInline(admin.TabularInline):
