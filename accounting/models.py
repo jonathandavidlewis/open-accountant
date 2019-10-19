@@ -61,14 +61,14 @@ class Credit(models.Model):
     value = models.DecimalField(max_digits=20, decimal_places=2, validators=[MinValueValidator(0)])
     transaction = models.ForeignKey(Transaction, on_delete=models.CASCADE)
     account = models.ForeignKey(Account, on_delete=models.CASCADE)
-    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True)
+    categories = models.ManyToManyField(Category)
 
 
 class Debit(models.Model):
     value = models.DecimalField(max_digits=20, decimal_places=2, validators=[MinValueValidator(0)])
     transaction = models.ForeignKey(Transaction, on_delete=models.CASCADE)
     account = models.ForeignKey(Account, on_delete=models.CASCADE)
-    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True)
+    categories = models.ManyToManyField(Category)
 
 
 
