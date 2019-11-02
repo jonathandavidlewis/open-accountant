@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.validators import MinValueValidator
 from enum import Enum
+import datetime
 
 
 # Create your models here.
@@ -38,7 +39,7 @@ class Transaction(models.Model):
     memo = models.CharField(max_length=200, blank=False)
     ref_number = models.CharField(max_length=200, blank=False)
     createdate = models.DateTimeField('date created', auto_now_add=True)
-    transactiondate = models.DateTimeField('transaction date', auto_now_add=True)
+    transactiondate = models.DateField('transaction date', default=datetime.datetime.now())
 
     def __unicode__(self):
         return '{}'.format(self.memo)
